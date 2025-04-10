@@ -6,15 +6,14 @@
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
-     <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
     <style>
         h5 {
             text-align: center;
             margin-top: -5px;
             font-size: 9px;
-            color: #636363; /* Improves visibility */
+            color: #636363;
         }
 
         .attributiontwo {
@@ -33,8 +32,8 @@
 
         .attributiontwo a {
             margin: 15px;
-            text-decoration: none; /* Removes underline */
-           -webkit-tap-highlight-color: transparent; /* Removes blue highlight */
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .icon {
@@ -45,7 +44,6 @@
             transform: scale(1.1);         
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             .attributiontwo {
                 padding: 15px;
@@ -56,92 +54,241 @@
             }
         }
     </style>
-	  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "r1wdvfvqj9");
-</script>
-	  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RN7F0879TV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RN7F0879TV');
-</script>
+    
+    <!-- Microsoft Clarity Tracking Code -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "r1wdvfvqj9");
+    </script>
+    
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN7F0879TV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RN7F0879TV');
+    </script>
   </head>
   <body>
     <div id="card">
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="Bed.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="loading.gif"  shadow-intensity="0.88" shadow-softness="1" autoplay exposure="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-        View in 4D
-    </button>
-        <div id="button" style = "display:flex; justify-content: space-between;">
-          <img src="4.png"  align="center" style="width:80px;  padding-left: 9px;padding-top: 6px;"/>
-	  <img src="iitname.png"  style="width:100px;  padding-right: 6px;padding-top: 6px;"/>    
-      </div>
-      <script>
-const myTimeout = setTimeout(myGreeting, 10000);
-
-function myGreeting() {
-  document.getElementById("button1").innerHTML = ""
-}
-
-</script>
-     
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer> 
-     <section class="attributiontwo">
-       <p style="background-image: url('black.png')" width: 60px; height: 60px; padding-left: 0px; padding-top: 10px;">
+      <model-viewer 
+        src="Bed.glb" 
+        id="model-viewer"
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        poster="loading.gif"  
+        shadow-intensity="0.88" 
+        shadow-softness="1" 
+        autoplay 
+        exposure="1"
+      >
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+          View in 4D
+        </button>
+        <div id="button" style="display:flex; justify-content: space-between;">
+          <img src="4.png" align="center" style="width:80px; padding-left: 9px;padding-top: 6px;"/>
+          <img src="iitname.png" style="width:100px; padding-right: 6px;padding-top: 6px;"/>    
+        </div>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
+      </model-viewer> 
       
-      <span>
+      <section class="attributiontwo">
+        <p style="background-image: url('black.png')" width: 60px; height: 60px; padding-left: 0px; padding-top: 10px;">
+          <span>
+            <a href="https://www.moglix.com/welltrust-healthcare-wsh-1206-mild-steel-pre-treated-epoxy-powder-coated-plain-bed-with-side-railing-mattress-wheel/mp/msnekpqex3lw52?s_kwcid=AL!10177!3!543397900717!!!g!2175053070183!&utm_source=google&utm_medium=cpc&utm_network=shopping&utm_campaign=&adgroup_id=127139328135&keyword=&gad_source=1&gclid=CjwKCAiAxaCvBhBaEiwAvsLmWHoFyvOWq7TCJJ1VgjT9-h8e8Fwv4_EByPaCC0-dJ5sxw7oSIZbLVxoCp-cQAvD_BwE" id="brochure-link">
+              <img src="Brochure_1.png" class="icon">
+            </a>
+            <a href="https://www.youtube.com/watch?v=2t9dKURDDAU" id="video-link">
+              <img src="Video_1.png" class="icon">
+            </a>
+            <a href="https://medintu.in/hospital-beds-and-icu-cots-for-rent/" id="website-link">
+              <img src="web_1.png" class="icon">
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link" id="form-link">
+              <img src="form_1.png" class="icon">
+            </a>
+            <h5>CLICK ON THE ABOVE ICONS FOR MORE FEATURES</h5>
+          </span>
+        </p>
+      </section>
+    </div>
+
+    <script type="module">
+      // Import model-viewer
+      import { ModelViewerElement } from 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js';
+      
+      // Time tracking variables
+      let modelViewStartTime;
+      let arViewStartTime;
+      let totalModelViewTime = 0;
+      let totalArViewTime = 0;
+      
+      // Model interaction variables
+      let lastPosition = { x: 0, y: 0, z: 0 };
+      let lastScale = 1;
+      let lastRotation = { x: 0, y: 0 };
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const modelViewer = document.querySelector('#model-viewer');
         
-        <a href="https://www.moglix.com/welltrust-healthcare-wsh-1206-mild-steel-pre-treated-epoxy-powder-coated-plain-bed-with-side-railing-mattress-wheel/mp/msnekpqex3lw52?s_kwcid=AL!10177!3!543397900717!!!g!2175053070183!&utm_source=google&utm_medium=cpc&utm_network=shopping&utm_campaign=&adgroup_id=127139328135&keyword=&gad_source=1&gclid=CjwKCAiAxaCvBhBaEiwAvsLmWHoFyvOWq7TCJJ1VgjT9-h8e8Fwv4_EByPaCC0-dJ5sxw7oSIZbLVxoCp-cQAvD_BwE">
-	      <img src="Brochure_1.png" class="icon" >
-	</a>
-        <a href="https://www.youtube.com/watch?v=2t9dKURDDAU">
-	     <img src="Video_1.png" class="icon"></a>
-        <a href="https://medintu.in/hospital-beds-and-icu-cots-for-rent/">
-		<img src="web_1.png" class="icon" >
-	</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link">
-		<img src="form_1.png" class="icon" ></a>
-        <h5>CLICK ON THE ABOVE ICONS FOR MORE FEATURES</h5>
-      </span>
-         <style>
-       h5 {
-       text-align: center;
-       margin-top:-5px; 
-       
-       
-       font-size: 9px;
-         }
+        // Model view time tracking
+        modelViewer.addEventListener('load', () => {
+          modelViewStartTime = new Date();
           
-   </style>  
-   
-    </section>
-      
-       </div>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PQ7NV90Z2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7PQ7NV90Z2');
-</script>
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+          // Send initial model load event
+          gtag('event', 'model_load', {
+            'event_category': '3d_model',
+            'event_label': 'Model loaded successfully'
+          });
+        });
+        
+        // AR view time tracking
+        modelViewer.addEventListener('ar-status', (event) => {
+          if (event.detail.status === 'session-started') {
+            // AR session started
+            arViewStartTime = new Date();
+            
+            // Pause model view time
+            if (modelViewStartTime) {
+              totalModelViewTime += new Date() - modelViewStartTime;
+              modelViewStartTime = null;
+            }
+            
+            gtag('event', 'ar_session_start', {
+              'event_category': 'ar_interaction',
+              'event_label': 'AR session started'
+            });
+          } else if (event.detail.status === 'session-ended') {
+            // AR session ended
+            if (arViewStartTime) {
+              totalArViewTime += new Date() - arViewStartTime;
+              arViewStartTime = null;
+              
+              gtag('event', 'ar_session_end', {
+                'event_category': 'ar_interaction',
+                'event_label': 'AR session ended',
+                'value': totalArViewTime / 1000 // in seconds
+              });
+            }
+            
+            // Resume model view time
+            modelViewStartTime = new Date();
+          }
+        });
+        
+        // Model interaction tracking
+        setInterval(() => {
+          if (modelViewer.cameraOrbit) {
+            const currentOrbit = modelViewer.getCameraOrbit();
+            const currentScale = modelViewer.getScale();
+            
+            // Check for rotation changes
+            if (Math.abs(currentOrbit.theta - lastRotation.x) > 0.1 || 
+                Math.abs(currentOrbit.phi - lastRotation.y) > 0.1) {
+              lastRotation = { x: currentOrbit.theta, y: currentOrbit.phi };
+              
+              gtag('event', 'model_rotate', {
+                'event_category': '3d_interaction',
+                'event_label': 'Model rotated',
+                'rotation_x': currentOrbit.theta,
+                'rotation_y': currentOrbit.phi
+              });
+            }
+            
+            // Check for scale changes
+            if (Math.abs(currentScale - lastScale) > 0.01) {
+              lastScale = currentScale;
+              
+              gtag('event', 'model_scale', {
+                'event_category': '3d_interaction',
+                'event_label': 'Model scaled',
+                'scale_value': currentScale
+              });
+            }
+          }
+        }, 500); // Check every 500ms
+        
+        // Button click tracking
+        document.getElementById('brochure-link').addEventListener('click', () => {
+          gtag('event', 'brochure_click', {
+            'event_category': 'button_clicks',
+            'event_label': 'Brochure link clicked'
+          });
+        });
+        
+        document.getElementById('video-link').addEventListener('click', () => {
+          gtag('event', 'video_click', {
+            'event_category': 'button_clicks',
+            'event_label': 'Video link clicked'
+          });
+        });
+        
+        document.getElementById('website-link').addEventListener('click', () => {
+          gtag('event', 'website_click', {
+            'event_category': 'button_clicks',
+            'event_label': 'Website link clicked'
+          });
+        });
+        
+        document.getElementById('form-link').addEventListener('click', () => {
+          gtag('event', 'form_click', {
+            'event_category': 'button_clicks',
+            'event_label': 'Form link clicked'
+          });
+        });
+        
+        document.getElementById('ar-button').addEventListener('click', () => {
+          gtag('event', 'ar_button_click', {
+            'event_category': 'button_clicks',
+            'event_label': 'AR button clicked'
+          });
+        });
+        
+        // Track total time when leaving the page
+        window.addEventListener('beforeunload', () => {
+          // Add any remaining time
+          if (modelViewStartTime) {
+            totalModelViewTime += new Date() - modelViewStartTime;
+          }
+          if (arViewStartTime) {
+            totalArViewTime += new Date() - arViewStartTime;
+          }
+          
+          // Send total times
+          if (totalModelViewTime > 0) {
+            gtag('event', 'total_model_view_time', {
+              'event_category': 'time_tracking',
+              'event_label': 'Total 3D model view time',
+              'value': totalModelViewTime / 1000 // in seconds
+            });
+          }
+          
+          if (totalArViewTime > 0) {
+            gtag('event', 'total_ar_view_time', {
+              'event_category': 'time_tracking',
+              'event_label': 'Total AR view time',
+              'value': totalArViewTime / 1000 // in seconds
+            });
+          }
+        });
+      });
+    </script>
+    
+    <script>
+      const myTimeout = setTimeout(myGreeting, 10000);
+      function myGreeting() {
+        document.getElementById("button1").innerHTML = ""
+      }
+    </script>
   </body>
 </html>
